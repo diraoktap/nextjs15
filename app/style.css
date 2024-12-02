@@ -1,0 +1,26 @@
+.main-heading {
+  font-size: 377px;
+  line-height: 350px;
+  margin-left: -8px;
+}
+
+.sub-heading {
+  font-size:144px;
+  line-height: 144px;
+  margin-left: -10px;
+  font-weight: bold;
+}
+
+.detail-heading {
+  font-size: 21px;
+}
+
+.main-title {
+  font-size: 21px;
+}
+
+.progress-bar {
+  height: 10px;
+  /* background: #ff0055; */
+  transform-origin: 0%;
+}

@@ -1,20 +1,21 @@
-import { getEmployees } from './(data)/(api)/employee';
-import SelectBox from './component/forms/selectbox';
+import HeaderPage from "./(pages)/header/page";
+import ProductsPage from "./(pages)/projects/page";
 
-export default async function EmployeePage() {
-  const employees = await getEmployees();
-
-  return (
-    <div>
-      <h1>Employee List</h1>
-      <SelectBox/>
-      <ul>
-        {employees.map((employee) => (
-          <li key={employee.nik}>
-            <strong>{employee.nama}</strong> - {employee.jabatan}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+export default function page() {
+    return (
+        <>
+            <div className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-md">
+                <section className="h-screen " id="home">
+                    <HeaderPage />
+                </section>
+                <section className="h-screen " id="projects">
+                    <ProductsPage />
+                </section>
+                <section className="h-screen " id="profile">
+                    {/* https://motion.dev/docs/examples ##Pinning */}
+                </section>
+                <section className="h-screen " id="contact"></section>
+            </div>
+        </>
+    )
 }
